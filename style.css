@@ -1,0 +1,54 @@
+/* paleta de colores: letras: #d9ad26  color de fondo: #0a131c */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Golos Text", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  background-color: #0a131c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 1rem;
+}
+
+.nav__img {
+  margin: 0 0.5rem;
+  width: 100px;
+  height: 100px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 1rem 0.5rem;
+  padding: 1rem 1rem;
+  border: solid 2px;
+  border-color: #d9ad26;
+  border-radius: 10px;
+}
+
+.nav__item a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s
+}
+
+.nav__item a:hover {
+    color: #d9ad26;
+}
