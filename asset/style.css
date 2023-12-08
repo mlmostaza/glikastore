@@ -1,4 +1,7 @@
-/* paleta de colores: letras: #d9ad26  color de fondo: #0a131c */
+:root {
+  --background: #0a131c;
+  --text-color: #d9ad26;
+}
 
 * {
   margin: 0;
@@ -17,19 +20,23 @@ ul {
   list-style: none;
 }
 
-nav {
+header {
   background-color: #0a131c;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
-  padding: 1rem;
+  padding: 0px 0.5rem;
+  width: 100%;
+  height: 80px;
+}
+
+.contenedorlogo {
+  height: 100%;
 }
 
 .nav__img {
-  margin: 0 0.5rem;
-  width: 100px;
-  height: 100px;
+  height: 100%;
 }
 
 .nav__list {
@@ -39,16 +46,16 @@ nav {
   margin: 1rem 0.5rem;
   padding: 1rem 1rem;
   border: solid 2px;
-  border-color: #d9ad26;
+  border-color: var(--text-color);
   border-radius: 10px;
 }
 
 .nav__item a {
   color: white;
   text-decoration: none;
-  transition: color 0.5s
+  transition: color 0.5s;
 }
 
 .nav__item a:hover {
-    color: #d9ad26;
+  color: var(--text-color);
 }
