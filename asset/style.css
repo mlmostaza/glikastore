@@ -1,6 +1,8 @@
 :root {
-  --background: #0a131c;
+  --primary: #0a131c;
+  --secondary: #f4eae0;
   --text-color: #d9ad26;
+  --background: #f4dfc8;
 }
 
 * {
@@ -14,22 +16,28 @@ body {
   font-family: "Bebas Neue", sans-serif;
   font-family: "Golos Text", sans-serif;
   font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
+
+/*header*/
 
 ul {
   list-style: none;
 }
 
 header {
-  background-color: #0a131c;
+  background-color: var(--primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
-  padding: 0px 0.5rem;
+  padding: 0px 2rem;
   width: 100%;
   height: 80px;
   position: fixed;
+  top: 0px;
+  z-index: 2;
 }
 
 .contenedorlogo {
@@ -47,7 +55,7 @@ header {
   margin: 1rem 0.5rem;
   padding: 1rem 1rem;
   border: solid 2px;
-  border-color: var(--text-color);
+  border-color: var(--secondary);
   border-radius: 10px;
 }
 
@@ -59,4 +67,79 @@ header {
 
 .nav__item a:hover {
   color: var(--text-color);
+}
+
+/* main */
+
+main {
+  background-color: var(--background);
+  color: var(--primary);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*HERO*/
+
+.hero {
+  display: flex;
+  height: 450px;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+  background-color: var(--secondary);
+  max-width: 1200px;
+  border-radius: 1rem;
+}
+
+.hero__img {
+  height: 70%;
+  border-radius: 1rem;
+}
+
+.hero__info {
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.hero__info h1 {
+  font-size: 2rem;
+}
+
+.hero__button button {
+  background-color: var(--background);
+  color: var(--primary);
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.active {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+/*ABOUT*/
+
+.about {
+  display: flex;
+  height: 450px;
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--secondary);
+  max-width: 1200px;
+  border-radius: 1rem;
+  text-align: center;
 }
